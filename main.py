@@ -5,9 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    print('Usage ADD')
-   # print("Usage;\n<Operation>?A=<Value1>&B=<Value2>\n")
-    #return 'Usage;\n<Operation>?A=<Value1>&B=<Value2>\n'
+    return 'Usage;\n<Operation>?A=<Value1>&B=<Value2>\n'
 
 
 @app.route('/add')
