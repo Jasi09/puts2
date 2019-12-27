@@ -22,5 +22,12 @@ def subtraction():
     result=Fraction(value1)-Fraction(value2)
     return '%s \n' % result
 
+@app.route('/multiplication')
+def multiplication():
+    value1=request.args.get('A',default = 0)
+    value2=request.args.get('B',default = 0)
+    result=Fraction(value1)*Fraction(value2)
+    return '%s \n' % result
+
 if __name__ == "__main__":
     app.run()
