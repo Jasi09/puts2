@@ -28,6 +28,13 @@ def multiplication():
     value2=request.args.get('B',default = 0)
     result=Fraction(value1)*Fraction(value2)
     return '%s \n' % result
+   
+@app.route('/division')
+def division():
+    value1=request.args.get('A',default = 0)
+    value2=request.args.get('B',default = 0)
+    result=Fraction(value1)/Fraction(value2)
+    return '%s \n' % result
 
 if __name__ == "__main__":
     app.run()
